@@ -1,0 +1,282 @@
+/***********************DRILLDOWN MENU******************************/
+.smallButton
+{
+    display: flex;
+    width: 20%;
+    height: 20%;
+    max-width: 20vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(1rem, 2vh, 3rem);
+}
+#overlayMenu 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:black;
+}
+
+.menu-content 
+{
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  overflow: auto;
+}
+
+#closeButton 
+{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+/*******************************************************************/
+
+html, body {
+    height: 100dvh;
+    width: 100dvw;
+    overflow: hidden;
+}
+body
+{
+    color:white;
+    font-family: "Oswald", sans-serif;
+    background-image: url(carti.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main
+{
+    max-height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height: 100%;
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hidden
+{
+    display: none !important;
+}
+
+.log-entry
+{
+    font-size: clamp(1rem, 2vh, 3rem);
+    background-color: white;
+    padding: 5px;
+    border: 1px solid black;
+    margin: 2px;
+    color:black;
+}
+.log-entry.important
+{
+    background-color: grey;
+}
+.log-entry.very-important
+{
+    background-color: black;
+    color: red;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    /**outline: 1px solid red;*/
+}
+
+* {
+    margin:0;
+    box-sizing: border-box;
+    /**outline: 1px solid red;*/
+}
+#logContainer
+{
+    background-color: rgb(10, 10, 10);
+    max-width: 800px;
+    max-height: 500px;
+    width:70%;
+    height:20%;
+    overflow-y: auto;
+    border: 3px solid rgba(255, 255, 255, 0.445);
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+#timer
+{
+    font-size: clamp(1rem, 5vh, 10rem);
+}
+#genericContainer
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+    border-color: rgb(58, 0, 0);
+    border: 10px rgb(58, 0, 0) solid ; 
+    background-color: rgb(17, 17, 17);
+}
+#genericContainer div
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: clamp(1rem, 5vh, 10rem);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    overflow: auto;
+}
+
+button
+{
+    font-family: "Oswald", sans-serif;
+}
+table
+{
+    
+    color: black;
+    font-size: clamp(1rem, 5vh, 15rem);
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+th, td
+{
+    border: 1px solid black;
+    height: 20%;
+    text-align: center;
+    
+    font-weight: 700;
+    font-size: clamp(1rem, 5vh, 4rem);
+}
+td
+{
+    height: 20%;
+    width: 33%;
+}
+td button
+{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    font-size: clamp(1rem, 5vh, 4rem);
+}
+
+#startButtonContainer
+{
+    bottom: 0;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#startButtonContainer button
+{
+    align-self: center;
+    width: 80%;
+    height: 100%;
+    font-size: clamp(1rem, 5vh, 15rem);
+}
+
+.container
+{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+ol
+{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.container ol li
+{   
+    font-size: clamp(1rem, 5vh, 15rem);
+}
+#gameCodeMessage
+{
+    font-size: clamp(1rem, 5vh, 15rem);
+    color: white;
+    text-align: center;
+    
+}
+#welcomeMsg
+{
+    font-size: clamp(1rem, 5vh, 15rem);
+    text-align: center;
+    
+}
+#playerListHeader
+{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    font-size: clamp(1rem, 5vh, 15rem);
+    background-color: red;
+    color: black
+}
+#genericDescription
+{
+    height: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: clamp(1rem, 2vh, 6rem);
+    
+}
+.top 
+{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Play Game!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="main">
+        <div class = "top">
+            <h1 id="gameCodeMessage">Game Code:</h1>
+            <h2 id="welcomeMsg">Waiting for host to start the game</h2>
+        </div>
+        <div class="container">
+            <h2 id="playerListHeader">PLAYERS</h2>
+            <div id="genericDescription"></div>
+            <div id="genericContainer"></div>
+            <div id="startButtonContainer"></div>
+            <button id="openOverlayButton" class="smallButton">OPTIONS</button>
+            <div id="timer"></div>
+        </div>
+        <div id="logContainer"></div>
+    </div>
+
+    <div id="overlayMenu">
+    <div class="menu-content">
+      <button id="closeButton">X</button>
+      <h2>Overlay Menu</h2>
+      <div id="optionsList"></div>
+      <div id = "sendOptionsButtonContainer"><button id="sendOptionsButton">CONFIRM</button></div>
+    </div>
+  </div>
+</body>
+
+<script src="lobby.js"></script>
+<script src="overlay.js"></script>
+</html>
